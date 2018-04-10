@@ -4,6 +4,7 @@ Raspberry Pi/Python project for noise level detection, recording and plot a nois
 ![alt text](https://raw.githubusercontent.com/Mob-Barley/noise_level_protocol/pic/2018-04-09.png)
 https://github.com/Mob-Barley/noise_level_protocol/blob/master/pic/2018-04-09.png
 ![alt text](pic/2018-04-09.png){:height="50%" width="50%"}
+<img src="pic/2018-04-09.png" width="40%">
 
 Introduction:
 There are many scripts for noise detectors, noise level meters, sleep- and baby monitors out there. But nothing for my requirements. My neighbour had very noisy parties every day and night. So a noise level protocol was required for further steps. In my local jurisdiction the exact value is not the essential criteria; duration, frequency, kind and personal perception are also important.
