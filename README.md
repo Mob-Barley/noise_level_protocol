@@ -50,7 +50,7 @@ For faster mp3 analysis I recommend an application with waveform like mp3directc
 There are several possible modifications here, for example the creation of the waveform in python, or real-time-plotting at plot.ly.
 At the end I want to thank all programmers who provide their scripts with open access, that was a big help for me. I want to do the same now, maybe someone can benefit from this.
 
-Related links for similar projects:
-dB/SPL meter using USB microphone https://www.raspberrypi.org/forums/viewtopic.php?t=154716
-Software for sound level / decibel data logging https://www.raspberrypi.org/forums/viewtopic.php?t=29061
+Related links for similar projects:  
+dB/SPL meter using USB microphone https://www.raspberrypi.org/forums/viewtopic.php?t=154716  
+Software for sound level / decibel data logging https://www.raspberrypi.org/forums/viewtopic.php?t=29061  
 Keeping track of sound levels with the Rasp Pi http://www.raspberry-pi-geek.com/Archive/2016/15/Keeping-track-of-sound-levels-with-the-Rasp-Pi
