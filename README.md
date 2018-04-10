@@ -17,7 +17,7 @@ Because I need onyl an approximate value of the noise (+-5 dB) and additionally 
 The other component is a Raspberry Pi 3 running with Raspbian.
 
 **Installation:**  
-Frist, notice that I'm not a programmer and never wrote a program before. So my scripts can be cumbersome. But it works and is easy to understand. I used absolute paths, because terminal, thonny and crontab have different home directories, not always "pi". 
+Frist, notice that I'm not a programmer and never wrote a program before. So my scripts can be cumbersome. But it works and is easy to understand. I used absolute paths, because terminal, thonny and crontab have different home directories, not always "pi". The directory is /home/pi/noise/.
 The microphone has to be set up and accessible as plughw:1,0. The script will record all the time, and then delete quiet files. Thus even loud single events can be saved, instead of activate the recording after a loud noise.
 
 Packages needed:  
@@ -41,11 +41,16 @@ Packages needed:
 6. Data can be plotted with py_plot.py or py_plot_today.py
   
 7. Example for crontab to run your scripts periodically: type crontab -e in terminal and enter  
-    55 23 * * *  python /home/pi/Skripte/Neu03/make_dirs.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
+    55 23 * * *  python /home/pi/noise/make_dirs.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
     05 0 * * *  python3 /home/pi/noise/py_plot.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
     10 0 * * *  python3 /home/pi/noise/gmail.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
 
 
 For faster mp3 analysis I recommend an application with waveform like mp3directcut. For me, the script works very well. 
 There are several possible modifications here, for example the creation of the waveform in python, or real-time-plotting at plot.ly.
-At the end I want to thank all programmers who provide their scripts with open access, that was a big help for me. I want to do the same now and hope someone can benefit from this.
+At the end I want to thank all programmers who provide their scripts with open access, that was a big help for me. I want to do the same now, maybe someone can benefit from this.
+
+Related links for similar projects:
+dB/SPL meter using USB microphone https://www.raspberrypi.org/forums/viewtopic.php?t=154716
+Software for sound level / decibel data logging https://www.raspberrypi.org/forums/viewtopic.php?t=29061
+Keeping track of sound levels with the Rasp Pi http://www.raspberry-pi-geek.com/Archive/2016/15/Keeping-track-of-sound-levels-with-the-Rasp-Pi
