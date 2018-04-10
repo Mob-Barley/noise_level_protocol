@@ -40,7 +40,7 @@ Packages needed:
 
 6. Data can be plotted with py_plot.py or py_plot_today.py
   
-7. Example for crontab to run your scripts periodically: type crontab -e in terminal and enter e.g.  
+7. Example for crontab to run your scripts periodically: type crontab -e in terminal and enter  
     55 23 * * *  python /home/pi/Skripte/Neu03/make_dirs.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
     05 0 * * *  python3 /home/pi/noise/py_plot.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
     10 0 * * *  python3 /home/pi/noise/gmail.py > /home/pi/Desktop/clog.log 2>&1 -q -f  
