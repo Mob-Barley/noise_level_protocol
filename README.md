@@ -1,10 +1,10 @@
 # noise_level_protocol
 Raspberry Pi/Python project for noise level detection, recording and plot a noise level protocol (e.g. for loud neighbour)
 
-<img src="pic/2018-04-09.png" width="50%">
+<img src="pic/2018-04-09.png" width="60%">
 
 **Introduction:**  
-There are many scripts for noise detectors, noise level meters, sleep- and baby monitors out there. But nothing for my requirements. My neighbour had very noisy parties every day and night. So a noise level protocol was required for further steps. In my local jurisdiction the exact value is not the essential criteria; duration, frequency, kind and personal perception are also important.
+There are many scripts for noise detectors, noise level meters, sleep- and baby monitors out there. But nothing for my special requirements. My neighbour had very noisy parties every day and night and 60 dB in my flat. So a noise level protocol was required for further steps. In my local jurisdiction the exact value is not the essential criteria; duration, frequency, kind and personal perception are also important.
 
 **Requirements:**  
 -noise detection and saving to csv  
@@ -29,12 +29,12 @@ Packages needed:
 
 2. Calibrate your microphone: 
   Open detect.py and change -d 120 to -d 10 in line 28, this will shorten the recording time.
-  Run detect.py at a quiet location, note down the first two numbers from  the "measured values" output (maximum amplitude and             rmsamplitude) starting at 30 dB, then increase the volume of your speakers and up in intervals of five to.
+  Run detect.py at a quiet location, note down the first two numbers from  the "measured values" output (maximum amplitude and             rmsamplitude) starting at 30 dB, then increase the volume of your speakers and go up in intervals of five to 80 or 90 dB.
   Simultaneous measure the noise level with your Smartphone e.g. with "Decibel X". I had the best results while playing "brown noise"     not only the sinewave.
   
 3. Create a function with the values on https://mycurvefit.com/, one for maximum amplitude, one for rms.
 
-4. Open detect.py, set the offset you want and replace the functions with yours from mycurvefit on lines 39 and 41. Change the recording    time to 120 again in line 28
+4. Open detect.py, set the offset you want and replace the functions with yours from mycurvefit on lines 39 and 41. Change the recording    time to 120 again in line 28.
 
 5. If you wish an E-Mail with the plot, you can modify the gmail.py. Important is, that third party applications can access the mail        account.
 
