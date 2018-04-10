@@ -7,10 +7,10 @@ Introduction:
 There are many scripts for noise detectors, noise level meters, sleep- and baby monitors out there. But nothing for my requirements. My neighbour had very noisy parties every day and night. So a noise level protocol was required for further steps. In my local jurisdiction the exact value is not the essential criteria; duration, frequency, kind and personal perception are also important.
 
 Requirements:
--noise detection and saving to csv
--record noise for later analysis as mp3
--create a noise level plot every day
--send me an email with the plot
+-noise detection and saving to csv  
+-record noise for later analysis as mp3  
+-create a noise level plot every day  
+-send me an email with the plot  
 
 Hardware:
 Because I need onyl an approximate value of the noise (+-5 dB) and additionally make recordings I decided not to use a decibel meter but a usb microphone from Seacue for 12€. A USB Webcam also ca be used.
