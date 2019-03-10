@@ -25,7 +25,7 @@ Packages needed:
 -lame  
 -sox  
 
-1. Create a directory with the current date in the mp3 folder for the recordings. The make_dirs.py script will make this.
+1. Create a directory with the current date in the mp3 folder for the recordings like "20180131" (YYYYMMDD). The make_dirs.py script will make this in the future, see point 7.
 
 2. Calibrate your microphone: 
   Open detect.py and change -d 120 to -d 10 in line 28, this will shorten the recording time.
