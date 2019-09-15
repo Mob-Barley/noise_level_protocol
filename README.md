@@ -22,6 +22,7 @@ The microphone has to be set up and accessible as plughw:1,0. The script will re
 
 Packages/Libraries needed:  
 -Matplotlib
+
 -lame  
 -libsox-fmt-mp3 
 
