@@ -20,10 +20,10 @@ The other component is a Raspberry Pi 3 running with Raspbian.
 Frist, notice that I'm not a programmer and never wrote a program before. So my scripts can be cumbersome. But it works and is easy to understand. I used absolute paths, because terminal, thonny and crontab have different home directories, not always "pi". The directory is /home/pi/noise/.
 The microphone has to be set up and accessible as plughw:1,0. The script will record all the time, and then delete quiet files. Thus even loud single events can be saved, instead of activate the recording after a loud noise.
 
-Packages needed:  
--plotly  
+Packages/Libraries needed:  
+-Matplotlib
 -lame  
--sox  
+-libsox-fmt-mp3 
 
 1. Create a directory with the current date in the mp3 folder for the recordings like "20180131" (YYYYMMDD). The make_dirs.py script will make this in the future, see point 7.
 
